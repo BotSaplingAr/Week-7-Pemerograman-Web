@@ -1,0 +1,90 @@
+/* --- CSS Eksternal --- */
+
+/* Komponen: Gaya Teks dan Tampilan Dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f4f8; /* Background color halaman */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Header dan Footer */
+header, footer {
+    background-color: #004a99; /* Warna korporat RSCM (misal) */
+    color: white;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+/* Konten Utama */
+main {
+    flex: 1; /* Membuat main content mengisi ruang */
+    padding: 2rem;
+    max-width: 700px;
+    width: 90%;
+    margin: 2rem auto; /* Konten di tengah */
+}
+
+#area-pendaftaran {
+    background-color: #ffffff; /* Komponen: Background color pada bagian */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+}
+
+/* Komponen: Layout menggunakan Grid untuk Form */
+.form-group {
+    display: grid;
+    /* Kolom pertama untuk label, kolom kedua untuk input */
+    grid-template-columns: 150px 1fr;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+    align-items: center; /* Menjaga label dan input sejajar */
+}
+
+.form-group label {
+    font-weight: bold;
+    text-align: right;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group select {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Mencegah padding merusak layout */
+}
+
+/* Komponen: Tombol dengan efek hover */
+#submit-btn {
+    background-color: #007bff; /* Warna tombol biru */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    display: block; /* Agar bisa di-margin auto */
+    margin: 1.5rem auto 0;
+    transition: background-color 0.3s ease; /* Transisi untuk hover */
+}
+
+#submit-btn:hover {
+    background-color: #0056b3; /* Warna lebih gelap saat hover */
+}

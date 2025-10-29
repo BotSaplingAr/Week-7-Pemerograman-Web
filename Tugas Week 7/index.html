@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Rawat Jalan RSCM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>Pendaftaran Online Rawat Jalan RSCM</h1>
+        </nav>
+    </header>
+
+    <main>
+        <section id="area-pendaftaran">
+            <h2>Formulir Pendaftaran Pasien</h2>
+            
+            <form id="form-registrasi">
+                
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama">
+                </div>
+                
+                <div class="form-group">
+                    <label for="rekam-medis">No Rekam Medis:</label>
+                    <input type="number" id="rekam-medis" name="rekam-medis" min="0" >
+                </div>
+                
+                <div class="form-group">
+                    <label for="telepon">No Telepon     :</label>
+                    <input type="tel" id="telepon" name="telepon" placeholder="Ex: 081234567890">
+                </div>
+                <div class="form-group">
+                    <label for="tgl-lahir">Tanggal Lahir:</label>
+                    <input type="date" id="tgl-lahir" name="tgl-lahir">
+                </div>
+                
+                <div class="form-group">
+                    <label for="poli">Pilih Poli Tujuan:</label>
+                    <select id="poli" name="poli">
+                        <option value="">--Pilih Poli--</option>
+                        <option value="umum">Poli Umum</option>
+                        <option value="gigi">Poli Gigi</option>
+                        <option value="jantung">Poli Jantung</option>
+                        <option value="anak">Poli Anak</option>
+                    </select>
+                </div>
+                
+                <button type="submit" id="submit-btn">Kirim Pendaftaran</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rumah Sakit Cipto Mangunkusumo. </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
